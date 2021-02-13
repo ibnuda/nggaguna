@@ -940,17 +940,6 @@ Wire Wire Line
 	8550 2175 8550 2300
 Connection ~ 7600 2500
 $Comp
-L rick:switch switch39
-U 1 1 602125DC
-P 6000 1800
-F 0 "switch39" H 6000 2055 50  0000 C CNN
-F 1 "switch" H 6000 1964 50  0000 C CNN
-F 2 "footprints:100-minimal" H 6000 1800 60  0001 C CNN
-F 3 "" H 6000 1800 60  0000 C CNN
-	1    6000 1800
-	1    0    0    -1  
-$EndComp
-$Comp
 L rick:diode diode37
 U 1 1 602125E6
 P 5700 1950
@@ -1087,9 +1076,6 @@ Connection ~ 7250 2175
 Connection ~ 5700 2000
 Wire Wire Line
 	5700 2000 6650 2000
-Connection ~ 6300 1800
-Wire Wire Line
-	6300 1800 6300 2300
 Wire Wire Line
 	4750 1000 6650 1000
 Connection ~ 5700 2500
@@ -1100,8 +1086,6 @@ Wire Wire Line
 	6300 2300 6300 2800
 Wire Wire Line
 	4750 1500 6650 1500
-Wire Wire Line
-	6300 800  6300 1800
 Wire Wire Line
 	5350 1800 5350 2175
 Connection ~ 5350 2175
@@ -1288,4 +1272,54 @@ F 3 "~" H 7000 5825 50  0001 C CNN
 	1    7000 5825
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6300 1800 6300 2175
+Connection ~ 6300 1800
+Wire Wire Line
+	6300 800  6300 1675
+$Comp
+L rick:switch switch39
+U 1 1 602125DC
+P 6000 1800
+F 0 "switch39" H 6000 2055 50  0000 C CNN
+F 1 "switch" H 6000 1964 50  0000 C CNN
+F 2 "footprints:100-minimal" H 6000 1800 60  0001 C CNN
+F 3 "" H 6000 1800 60  0000 C CNN
+	1    6000 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L rick:switch switch41
+U 1 1 60293267
+P 6000 1675
+F 0 "switch41" H 6000 1930 50  0000 C CNN
+F 1 "switch" H 6000 1839 50  0000 C CNN
+F 2 "footprints:200-minimal" H 6000 1675 60  0001 C CNN
+F 3 "" H 6000 1675 60  0000 C CNN
+	1    6000 1675
+	1    0    0    -1  
+$EndComp
+Connection ~ 6300 1675
+Wire Wire Line
+	6300 1675 6300 1800
+$Comp
+L rick:switch switch42
+U 1 1 60293F2B
+P 6000 2175
+F 0 "switch42" H 6000 2430 50  0000 C CNN
+F 1 "switch" H 6000 2339 50  0000 C CNN
+F 2 "footprints:200-minimal" H 6000 2175 60  0001 C CNN
+F 3 "" H 6000 2175 60  0000 C CNN
+	1    6000 2175
+	1    0    0    -1  
+$EndComp
+Connection ~ 6300 2175
+Wire Wire Line
+	6300 2175 6300 2300
+Wire Wire Line
+	5700 2175 5700 2300
+Connection ~ 5700 2300
+Wire Wire Line
+	5700 1675 5700 1800
+Connection ~ 5700 1800
 $EndSCHEMATC
